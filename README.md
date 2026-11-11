@@ -1,96 +1,53 @@
-# Network Intrusion Detection System (NIDS) with Suricata
+# CodeAlpha Cyber Security Internship Tasks
 
-## Project Overview
+This repository contains my projects completed as part of the CodeAlpha Cyber Security Internship Program (November 2026).
 
-This project implements a Network Intrusion Detection System (NIDS) using Suricata to monitor network traffic and detect suspicious activities.
+## Internship Tasks
 
-The laboratory uses Ubuntu 22.04 as the intrusion detection server and Kali Linux as the testing machine. Custom Suricata rules are used to identify different network activities and generate security alerts.
-
-## Objectives
-
-- Install and configure Suricata.
-- Monitor network traffic in real time.
-- Create custom intrusion detection rules.
-- Simulate network activities using Kali Linux.
-- Analyze alerts and security events.
-
-## Laboratory Overview
-
-![NIDS Lab Architecture](screenshots/01-lab-architecture.png)
-
-![Suricata Operational Status](screenshots/02-suricata-status.png)
-
-## Lab Environment
-
-| Component | Details |
-|---|---|
-| Operating System (NIDS) | Ubuntu 22.04 |
-| Testing Machine | Kali Linux |
-| IDS Engine | Suricata 6.0.4 |
-| Network Interface | ens33 |
-| Ubuntu IP Address | 192.168.1.25 |
-| Kali IP Address | 192.168.1.33 |
-| Virtualization | VMware Workstation 17 Pro |
-
-## Detection Scenarios
-
-| SID | Detection Rule | Status |
+| Task | Project | Status |
 |---|---|---|
-| 1000001 | ICMP Ping Detection | Successful |
-| 1000002 | Nmap SYN Scan Detection | Successful |
-| 1000003 | HTTP POST Request Detection | Successful |
-| 1000004 | Repeated SSH Connection Attempts | Successful |
+| Task 3 | Secure Coding Review | Completed |
+| Task 4 | Network Intrusion Detection System (NIDS) | Completed |
 
-## Project Structure
+## Task 3 – Secure Coding Review
+
+**Status:** Completed
+
+A PHP and MariaDB application was reviewed to identify security vulnerabilities. Static analysis with Semgrep and manual testing revealed SQL injection, plaintext password storage, and stored XSS. Security improvements were implemented and retested.
+
+[View Task 3 Project](Task-3-Secure-Coding-Review/)
+
+## Task 4 – Network Intrusion Detection System (NIDS)
+
+**Status:** Completed
+
+A Network Intrusion Detection System was implemented using Suricata on Ubuntu 22.04. Custom rules were tested using Kali Linux to detect ICMP traffic, Nmap SYN scans, HTTP POST requests, and repeated SSH connection attempts.
+
+[View Task 4 Project](Task-4-Network-Intrusion-Detection-System/)
+
+## Repository Structure
 
 ```text
-CodeAlpha-NIDS/
+codealpha_tasks/
 ├── README.md
-├── rules/
-│   └── local.rules
-├── docs/
-│   ├── architecture.md
-│   └── installation.md
-├── tests/
-│   └── test-results.md
-└── screenshots/
+├── Task-3-Secure-Coding-Review/
+│   ├── README.md
+│   ├── src/
+│   ├── docs/
+│   └── screenshots/
+└── Task-4-Network-Intrusion-Detection-System/
+    ├── README.md
+    ├── rules/
+    ├── docs/
+    ├── tests/
+    └── screenshots/
 ```
 
-## Logs and Monitoring
-
-Suricata generates security events in the following files:
-
-- `/var/log/suricata/fast.log`
-- `/var/log/suricata/eve.json`
-
-These logs provide information about detected traffic, source and destination IP addresses, protocols, and alert signatures.
-
-## Results
-
-The laboratory successfully demonstrated the detection of four network traffic scenarios using custom Suricata rules.
-
-A total of 53,290 rules were loaded, with zero rule-loading failures at the time of verification.
-
-## Technologies Used
-
-- Suricata
-- Ubuntu Linux
-- Kali Linux
-- Nmap
-- cURL
-- VMware Workstation
-- TCP/IP networking
-
-## Project Context
-
-This project was developed as part of the CodeAlpha Cyber Security Internship Program.
-
 ## Author
-
-**Astan Mve Sidibé**
+Astan Mve Sidibé
 
 Master 1 Student in Information Systems Security at ESMT.
 
 Background in Telecommunications and IT, specializing in Network Administration and Security.
 
-Interested in cybersecurity, network security, and intrusion detection systems.
+Interested in cybersecurity, network security, and secure systems.

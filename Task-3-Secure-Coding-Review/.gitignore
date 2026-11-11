@@ -1,0 +1,11 @@
+# Database credentials
+**/db.php
+.env
+
+# Temporary files
+*.log
+*.tmp
+
+# Operating system files
+.DS_Store
+Thumbs.db
